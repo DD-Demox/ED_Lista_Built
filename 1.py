@@ -1,5 +1,7 @@
-vetor = []
-for i in range(5):
-    vetor.append(int(input("Digite um numero:")))
+if __name__ == '__main__':
 
-print(vetor)
+    vetor = []
+    for i in range(5):
+        vetor.append(int(input("Digite um numero:")))
+
+    print(vetor)

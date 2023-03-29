@@ -7,18 +7,20 @@ def eh_vogal(letra:str):
         return False
 
 
-vetor=[]
-consoantes = []
+if __name__ == '__main__':
 
-soma = 0
-for i in range(10):
-    vetor.append(input("Digite um char"))
+    vetor=[]
+    consoantes = []
 
-for i in vetor:
-    if not eh_vogal(i):
-        soma += 1
-        consoantes.append(i)
+    soma = 0
+    for i in range(10):
+        vetor.append(input("Digite um char"))
+
+    for i in vetor:
+        if not eh_vogal(i):
+            soma += 1
+            consoantes.append(i)
 
 
-print(soma)
-print(consoantes)
+    print(soma)
+    print(consoantes)
