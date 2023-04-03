@@ -19,7 +19,7 @@ if __name__ == '__main__':
     print("-------------------     -----   ---")
     for i in range(6):
         espaçoBranco = 25-len(sistemasOps[i])
-        print(sistemasOps[i]+espaçoBranco*" " + str(votos[i]) + "   " + str(round(((votos[i]/votosTotais)*100), 2)) + "%")
+        print(sistemasOps[i]+espaçoBranco*" " + str(votos[i]) + "      " + str(round(((votos[i]/votosTotais)*100), 2)) + "%")
 
     print("-------------------     -----")
     print(f"Total                    {votosTotais}\n")
