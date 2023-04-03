@@ -28,15 +28,11 @@ if __name__ == '__main__':
             votosValidos.append([votosComputados[i], porcentagensJogador[i], (i+1)])
     votosValidos.sort(reverse=True)
     with open("enquete.txt","w") as enquete:
-        enquete.write("Resultado da votação:")
-        enquete.write("\n")
-        enquete.write(f"Foram computados {totalVotos} votos.")
-        enquete.write("\n")
-        enquete.write("Jogador    Votos       %")
-        enquete.write("\n")
+        enquete.write("Resultado da votação:\n")
+        enquete.write(f"Foram computados {totalVotos} votos.\n")
+        enquete.write("Jogador    Votos       %\n")
         for i in range(len(votosValidos)):
-            enquete.write(f"{votosValidos[i][2]}           {votosValidos[i][0]}           {votosValidos[i][1]}%")
-            enquete.write("\n")
+            enquete.write(f"{votosValidos[i][2]}           {votosValidos[i][0]}           {votosValidos[i][1]}%\n")
 
         enquete.write(f"O melhor jogador foi o número {votosValidos[0][2]}, com {votosValidos[0][0]} votos, correspondendo a {votosValidos[0][1]}% do total de votos.")
 
